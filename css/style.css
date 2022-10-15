@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#ff0000;
+    --black:#ffffff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    min-height: 100vh;
+    /*background-image: url(https://www.egames.news/__export/1644092736543/sites/debate/img/2022/02/05/cuxles_son_todos_los_tipos_de_gamers_que_existen_y_cxmo_saber_si_eres_un_noob_o_un_hardcore_gamer.jpg_759710130.jpg);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: none;
+    background-size: cover;
+    /*background-position: center center;
+    /*background-attachment: fixed;*/
+
+    background: url(https://www.todofondos.net/wp-content/uploads/1920x1200-BADASS-Wallpaper-HD-Fondo-de-pantalla-de-juegos-4K-Fondo-de-pantalla-HD.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+
+    
+    
+
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+
+.heading span{
+    background: var(--orange);
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.user{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 10rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 11.6rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn1:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.btn2{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 12.1rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn2:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.btn3{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 11rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn3:hover{
+    background: var(--orange);
+    color:#fff;
+}
+
+.products .product-slider{
+    padding:7rem;
+}
+
+.products .product-slider .box:hover{
+    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,075));
+    color:#fff;
+}
+
+.products .product-slider .box{
+    background: transparent;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 4rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.products .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.products .product-slider .box img{
+    height:20rem;
+} 
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%; right:-110%;
+        width:30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right:2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+}
